@@ -1,15 +1,15 @@
 <template>
   <div>
     <img :src="getImage" :alt="getImage" width="260px" height="280px" />
-    <h3 v-if="book.volumeInfo.title">
+    <h4 v-if="book.volumeInfo.title">
       Title: <span v-html="highlightedTitleText"></span>
-    </h3>
-    <h3 v-if="book.volumeInfo.authors">
+    </h4>
+    <h4 v-if="book.volumeInfo.authors">
       Author: <span v-html="highlightedAuthorText"></span>
-    </h3>
-    <h3 v-if="book.volumeInfo.publisher">
+    </h4>
+    <h4 v-if="book.volumeInfo.publisher">
       Publisher: <span v-html="highlightedPublisherText"></span>
-    </h3>
+    </h4>
   </div>
 </template>
 

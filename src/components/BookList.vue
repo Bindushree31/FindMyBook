@@ -18,7 +18,7 @@
       </div>
     </div>
     <div v-if="loading">Loading...</div>
-    <span v-if="loading === false && books.length === 0">No Books found</span>
+    <!-- <span v-if="loading === false && books.length === 0">No Books found</span>-->
     <div v-if="books.length != 0" class="container">
       <div class="box" v-for="book in books" :key="book.id">
         <BookPage
@@ -123,7 +123,7 @@ export default {
 .box {
   margin: 30px 0px 30px 5px;
   background-color: #91d1e3;
-  width: 270px;
+  width: 260px;
   padding: 5px;
   box-shadow: 0 0 10px black;
   position: relative;
@@ -133,7 +133,7 @@ img {
 }
 
 .select {
-  border: 3px solid #cc6300;
+  border: 3px solid #91d1e3;
 }
 .containerSearch {
   display: flex;
@@ -141,7 +141,7 @@ img {
   align-items: center;
 }
 .input {
-  border: 3px solid #cc6300;
+  border: 3px solid #91d1e3;
   border-right: none;
   padding: 5px 10px 5px 10px;
   height: 50px;
@@ -153,8 +153,8 @@ img {
 }
 
 .button {
-  border: 1px solid #cc6300;
-  background: #cc6300;
+  border: 1px solid #91d1e3;
+  background: #91d1e3;
   color: #fff;
   border-radius: 0 5px 5px 0;
   cursor: pointer;
